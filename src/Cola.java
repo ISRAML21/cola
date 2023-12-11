@@ -55,19 +55,19 @@ public class Cola<T> {
 
         do {
             System.out.println("\n--- Menú de Cola ---");
-            System.out.println("1. Enqueue (Agregar elemento)");
-            System.out.println("2. Dequeue (Quitar elemento)");
-            System.out.println("3. Peek (Ver frente de la cola)");
-            System.out.println("4. Mostrar elementos de la cola");
-            System.out.println("5. Tamaño de la cola");
-            System.out.println("6. ¿La cola está vacía?");
-            System.out.println("0. Salir");
+            System.out.println("1. AGREGAR ELEMENTO (Enqueue) ");
+            System.out.println("2. QUITAR ELEMENTO (Dequeue) ");
+            System.out.println("3. VER FRENTE DE LA COLA (Peek) ");
+            System.out.println("4. MOSTRAER ELEMENTOS DE LA COLA");
+            System.out.println("5. TAMAÑO DE LA COLA");
+            System.out.println("6. ¿LA COLA SE ENCUENTRA VACÍA?");
+            System.out.println("7. SALIR");
             System.out.print("Ingrese su opción: ");
             opcion = scanner.nextInt();
 
             switch (opcion) {
                 case 1:
-                    System.out.print("Ingrese el elemento a agregar: ");
+                    System.out.print("INTRODUZCA EL ELEMENTO A AGREGAR: ");
                     int elementoEnqueue = scanner.nextInt();
                     cola.enqueue(elementoEnqueue);
                     break;
@@ -75,14 +75,14 @@ public class Cola<T> {
                 case 2:
                     Integer elementoDequeue = cola.dequeue();
                     if (elementoDequeue != null) {
-                        System.out.println("Elemento removido: " + elementoDequeue);
+                        System.out.println("ELEMENTO ELIMINADO: " + elementoDequeue);
                     }
                     break;
 
                 case 3:
                     Integer frenteCola = cola.peek();
                     if (frenteCola != null) {
-                        System.out.println("Frente de la cola: " + frenteCola);
+                        System.out.println("FRENTE DE LA COLA: " + frenteCola);
                     }
                     break;
 
@@ -91,22 +91,22 @@ public class Cola<T> {
                     break;
 
                 case 5:
-                    System.out.println("Tamaño de la cola: " + cola.obtenerTamaño());
+                    System.out.println("TAMAÑO DE LA COLA: " + cola.obtenerTamaño());
                     break;
 
                 case 6:
-                    System.out.println("¿La cola está vacía? " + cola.estaVacia());
+                    System.out.println("¿LA COLA SE ENCUENTRA VACÍA? " + cola.estaVacia());
                     break;
 
                 case 0:
-                    System.out.println("Saliendo del programa.");
+                    System.out.println("SALIENDOM DEL PROGRAMA...");
                     break;
 
                 default:
-                    System.out.println("Opción no válida. Intente nuevamente.");
+                    System.out.println("OPCION NO VAIDA, INTENTE NUEVAMENTE.");
                     break;
             }
-        } while (opcion != 0);
+        } while (opcion != 7);
 
         scanner.close();
     }
