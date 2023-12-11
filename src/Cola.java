@@ -17,7 +17,7 @@ public class Cola<T> {
         if (!cola.isEmpty()) {
             return cola.poll();
         } else {
-            System.out.println("La cola está vacía.");
+            System.out.println("LA COLA ESTÁ VACÍA");
             return null;
         }
     }
@@ -26,7 +26,7 @@ public class Cola<T> {
         if (!cola.isEmpty()) {
             return cola.peek();
         } else {
-            System.out.println("La cola está vacía.");
+            System.out.println("LA COLA ESTÁ VACÍA");
             return null;
         }
     }
@@ -35,7 +35,7 @@ public class Cola<T> {
         if (!cola.isEmpty()) {
             System.out.println("Elementos de la cola: " + cola);
         } else {
-            System.out.println("La cola está vacía.");
+            System.out.println("A COLA ESTÁ VACÍA");
         }
     }
 
@@ -98,8 +98,8 @@ public class Cola<T> {
                     System.out.println("¿LA COLA SE ENCUENTRA VACÍA? " + cola.estaVacia());
                     break;
 
-                case 0:
-                    System.out.println("SALIENDOM DEL PROGRAMA...");
+                case 7:
+                    System.out.println("SALIENDO DEL PROGRAMA...");
                     break;
 
                 default:
